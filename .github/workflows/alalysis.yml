@@ -19,4 +19,4 @@ jobs:
 
       # Анализ SpotBugs
       - name: SpotBugs analysis
-        run: mvn spotbugs:check
+        run: mvn spotbugs:checks
