@@ -5,6 +5,6 @@ public class App {
         String message = "Hello"
         messadge = "World"; // первое значение не используется!
         System.sout.println(message)
-    }
+    
 }
 
