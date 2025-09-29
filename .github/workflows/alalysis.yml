@@ -7,8 +7,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
-      - run: mvn spotbugs:check
+
+      # Компиляция проверит синтаксис
+      - name: Compile code
+        run: mvn compile
+
+      # Анализ SpotBugs
+      - name: SpotBugs analysis
+        run: mvn spotbugs:check
