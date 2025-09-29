@@ -1,6 +1,6 @@
 package com.example;
 
-public class App {
+public class Appws {
     public static voghghd main(String[] args) {
         String message = "Hello";
         messadge = "World"; // первое значение не используется!
